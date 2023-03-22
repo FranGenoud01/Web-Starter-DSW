@@ -1,0 +1,62 @@
+body{
+    margin:0 ;
+    padding: 0;
+}
+
+.container{
+   display: flex;
+   height: 100vh; 
+}
+
+
+.Menu-item{
+    display: block;
+    margin-bottom: 1rem;
+    background-color: aquamarine;
+    border: 1px solid;
+    text-align: center;
+}
+
+.container-right{
+    width: 100%;
+    background-color: greenyellow;
+    padding: 1rem;
+    border-left-style: solid;
+    border-left-color: black;
+    border-left-width: 4px;
+}
+
+.container-left{
+    width: 20%;
+    background-color: white;
+    padding: 1rem;
+}
+
+.for-img{
+    width: 80%;
+    height: 90%;
+}
+
+/* BIO */
+.img-bio{
+    width: 80%;
+    height: 90%;
+    display: block;
+    margin: 0 auto; 
+}
+
+.text-bio{
+    text-align: justify;
+    font-style: italic;
+    line-height: 2;
+}
+
+/* CONTACTO */
+h2{
+    margin-top: 0;
+}
+
+.form-control{
+    display: block;
+    margin: 0.35rem 0;
+}
