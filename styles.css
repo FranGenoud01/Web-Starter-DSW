@@ -6,49 +6,102 @@ body{
 .container{
    display: flex;
    height: 100vh; 
+   flex-direction: column;
 }
 
+@media(min-width: 768px){
+    .container{
+        flex-direction: row;
+    }
+    .Menu-item{
+        display: block;
+        margin-bottom: 1rem;
+        background-color: aquamarine;
+        border: 1px solid;
+        text-align: center;
+    }
 
-.Menu-item{
-    display: block;
-    margin-bottom: 1rem;
-    background-color: aquamarine;
-    border: 1px solid;
-    text-align: center;
+    .container-left{
+        width: 20%;
+        background-color: white;
+        padding: 1rem;
+    }
+    .container-right{
+        width: 80%;
+        background-color: rgb(209, 208, 178);
+        padding: 1rem;
+        border-left-style: solid;
+        border-left-color: black;
+        border-left-width: 4px;
+    }
+
+    
 }
 
-.container-right{
-    width: 100%;
-    background-color: greenyellow;
-    padding: 1rem;
-    border-left-style: solid;
-    border-left-color: black;
-    border-left-width: 4px;
-}
+@media(max-width: 768px){
+    
+    .container{
+       display: flex;
+       height: 100vh; 
+       flex-direction: column;
+    }
 
-.container-left{
-    width: 20%;
-    background-color: white;
-    padding: 1rem;
+    .Menu-item{
+        display: flex;
+        margin-bottom: 1rem;
+        background-color: aquamarine;
+        border: 1px solid;
+        text-align: center;
+    }
+
+    .container-right{
+        width: 100%;
+        background-color: rgb(209, 208, 178);
+        padding: 1rem;
+        border-top-style: solid;
+        border-top-color: black;
+        border-top-width: 4px;
+    }
+
+    .container-left{
+        width: 100%;
+        background-color: white;
+        padding: 1rem;
+    }  
+
+    .Menu{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        top: auto;
+        left: auto;
+        bottom: auto;
+        right: auto;
+        margin: auto;
+    }
 }
 
 .for-img{
-    width: 80%;
-    height: 90%;
+    width: 70%;
+    height: 70%;
+    display: block;
+    margin: 0 auto;
 }
 
 /* BIO */
 .img-bio{
-    width: 80%;
-    height: 90%;
+    width: 50%;
+    height: 70%;
     display: block;
     margin: 0 auto; 
 }
 
 .text-bio{
-    text-align: justify;
+    text-align: center;
     font-style: italic;
-    line-height: 2;
+    font-weight: bold;
+    line-height: 1;
 }
 
 /* CONTACTO */
@@ -59,4 +112,48 @@ h2{
 .form-control{
     display: block;
     margin: 0.35rem 0;
+}
+
+.form-button{
+    display: block;
+
+}
+
+.error{
+    color: red;
+    display: none;
+}
+
+.show-error{
+    display: block;
+}
+
+.ok{
+    color: green;
+    display: none;
+}
+
+.show-ok{
+    display: block;
+}
+
+/* USER */
+.user-img{
+    display: block;
+    margin: 0 auto;
+}
+
+#get-user {
+    display: block;
+    margin: 0 auto;
+}
+
+.user{
+    text-align: center;
+    margin: 0 auto;
+}
+
+#user-jpg{
+    display: block;
+    margin: 0 auto; 
 }
